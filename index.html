@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subnet Planner (Teaching Mode)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Subnet Analysis Tool</h1>
+  <p class="subtitle">
+Analyze IPv4 networks and learn subnetting logic step by step
+  </p>
+
+  <form id="subnetForm">
+    <label>
+      Starting IPv4 Address
+      <input type="text" id="ipAddress" placeholder="192.168.10.1" required>
+    </label>
+
+    <label>
+      Selection Mode
+      <select id="cidrMode">
+        <option value="hosts" selected>I need at least X usable hosts</option>
+        <option value="manual">I already know the CIDR</option>
+      </select>
+    </label>
+
+    <label id="cidrInputLabel" style="display:none;">
+      CIDR Mask
+      <input type="number" id="cidr" min="1" max="30" placeholder="24">
+    </label>
+
+    <label id="hostInputLabel">
+      Required Usable Hosts
+      <input type="number" id="requiredHosts" placeholder="50">
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox" id="teachingMode">
+      Enable Teaching Mode
+    </label>
+
+    <button type="submit">Calculate Subnet</button>
+  </form>
+
+  <div id="output">
+    <div class="result-default" id="placeholder">
+      <img src="/img/network.png" alt="network illustration" width="90">
+      <h3>Ready to Calculate</h3>
+      <p>Enter your IP address and configuration, then click Calculate to see your subnet details</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Note: This tool focuses on single-octet subnetting (/24–/30) to reinforce core IPv4 concepts</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
