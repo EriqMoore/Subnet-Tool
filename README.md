@@ -2,42 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Subnet Analysis Tool - README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-    }
-    h1, h2, h3 {
-      color: #1e3a8a;
-    }
-    h1 {
-      text-align: center;
-    }
-    pre {
-      background: #f9fafb;
-      padding: 15px;
-      border-radius: 0.5rem;
-      overflow-x: auto;
-    }
-    code {
-      font-family: monospace;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    a {
-      color: #3b82f6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
   <h1>Subnet Analysis Tool</h1>
@@ -111,11 +75,6 @@ Total Usable Hosts: 62
     <li>Supports only /24–/30 for single-octet subnet planning.</li>
     <li>Uses vanilla JavaScript — no frameworks required.</li>
   </ul>
-
-  <h2>License</h2>
-  <p>
-    This project is open source and can be freely used and modified.
-  </p>
 
   <h2>Author</h2>
   <p>
