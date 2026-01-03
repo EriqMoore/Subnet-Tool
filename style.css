@@ -60,7 +60,6 @@ select {
   border-radius: 0.75rem;
   background: #f9fafb;
   transition: border 0.2s, box-shadow 0.2s;
-  font-size: 16px; /* prevent zoom on mobile */
   appearance: none;
 }
 
@@ -232,6 +231,10 @@ footer {
   form {
     padding: 20px 15px;
   }
+   input, select, button {
+      font-size: 16px; 
+    }
+  
 
   h1 {
     font-size: 1.5rem;
@@ -261,7 +264,6 @@ footer {
   input[type="number"],
   select {
     padding: 12px 15px;
-    font-size: 16px;
       width: 90%;
   }
 }
