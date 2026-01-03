@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f6f8;
-  padding: 20px; /* reduced padding for mobile */
+  padding: 20px; /* smaller padding for mobile */
   max-width: 800px;
   margin: auto;
   color: #333;
@@ -16,8 +16,9 @@ h1 {
 
 .subtitle {
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
+  font-size: 1rem;
 }
 
 /* ===== Form Styling ===== */
@@ -27,18 +28,17 @@ form {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  padding: 30px 20px 25px;
+  padding: 30px 20px;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   transition: transform 0.3s;
   width: 100%;
-  box-sizing: border-box;
 }
 
 label {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   width: 100%;
   max-width: 400px;
   text-align: left;
@@ -54,13 +54,13 @@ input[type="text"],
 input[type="number"],
 select {
   width: 100%;
-  padding: 12px 15px;
+  padding: 14px 15px;
   margin-top: 5px;
   border: 2px solid #d1d5db;
   border-radius: 0.75rem;
   background: #f9fafb;
   transition: border 0.2s, box-shadow 0.2s;
-  font-size: 1rem;
+  font-size: 16px; /* prevent zoom on mobile */
   appearance: none;
 }
 
@@ -96,7 +96,7 @@ select:focus {
 /* ===== Button ===== */
 button {
   margin-top: 10px;
-  padding: 12px 25px;
+  padding: 14px 25px;
   cursor: pointer;
   border: none;
   border-radius: 0.75rem;
@@ -105,8 +105,6 @@ button {
   font-weight: 600;
   font-size: 1rem;
   transition: background 0.3s, transform 0.2s;
-  width: 100%;
-  max-width: 200px;
 }
 
 button:hover {
@@ -120,10 +118,10 @@ button:hover {
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   padding: 2rem;
-  width: 100%;
-  box-sizing: border-box;
-  min-width: 0;
+  min-width: 100%;
+  max-width: 800px;
   transition: all 0.5s ease;
+  box-sizing: border-box;
 }
 
 #output h2, #output h3 {
@@ -137,14 +135,14 @@ button:hover {
 }
 
 #output h3 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin-top: 1rem;
 }
 
 /* ===== Teaching Mode Step Cards ===== */
 .step-card {
   background: linear-gradient(to right, #e0f2fe, #bae6fd);
-  padding: 20px 15px;
+  padding: 15px 20px;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -186,7 +184,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-  flex-wrap: wrap;
 }
 
 .highlight-line {
@@ -195,7 +192,6 @@ button:hover {
   border-radius: 0.5rem;
   display: block;
   margin: 5px 0;
-  word-break: break-word;
 }
 
 .result-default {
@@ -227,30 +223,44 @@ footer {
   margin-top: 20px;
 }
 
-/* ===== Mobile Responsive ===== */
+/* ===== Responsive ===== */
 @media (max-width: 600px) {
   body {
     padding: 15px;
   }
+
   form {
-    padding: 20px 15px 20px;
+    padding: 20px 15px;
   }
-  #output {
-    padding: 1.5rem;
-  }
-  .step-card {
-    padding: 15px 12px;
-  }
+
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
-  #output h2 {
-    font-size: 1.35rem;
+
+  .subtitle {
+    font-size: 0.9rem;
   }
-  #output h3 {
-    font-size: 1.05rem;
-  }
+
   button {
-    max-width: 100%;
+    width: 100%;
+  }
+
+  #output {
+    padding: 1rem;
+  }
+
+  .step-card {
+    padding: 12px 15px;
+  }
+
+  .step-value {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 12px 15px;
+    font-size: 16px;
   }
 }
