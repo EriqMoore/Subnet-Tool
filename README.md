@@ -5,7 +5,7 @@
 </head>
 <body>
   <h1>Subnet Analysis Tool</h1>
-   <img src="./img/project.png" alt="network illustration" width="90">
+   <img src="./img/project.png">
 
   <h2>Overview</h2>
   <p>
