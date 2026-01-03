@@ -46,7 +46,7 @@
 
   <h2>Usage</h2>
   <ol>
-    <li>Open <code>index.html</code> in a modern browser.</li>
+    <li>Open <a href="https://eriqmoore.github.io/Subnet-Tool/">https://eriqmoore.github.io/Subnet-Tool/</a></li>
     <li>Enter a valid IPv4 address.</li>
     <li>Select either "I need at least X usable hosts" or "I already know the CIDR".</li>
     <li>If using hosts mode, enter the number of required hosts.</li>
