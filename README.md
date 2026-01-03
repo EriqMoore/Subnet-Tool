@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 </head>
 <body>
-  <h1>Subnet Analysis Tool</h1>
+  <h1>Subnetting Analysis Tool</h1>
 
   <h2>Overview</h2>
   <p>
