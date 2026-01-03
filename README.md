@@ -74,7 +74,7 @@ Total Usable Hosts: 62
     <li>Subnet calculations are done in JavaScript using bitwise operations.</li>
     <li>Teaching Mode explains each calculation in detail and highlights key values.</li>
     <li>Supports only /24–/30 for single-octet subnet planning.</li>
-    <li>Uses vanilla JavaScript — no frameworks required.</li>
+    <li>Uses vanilla JavaScript</li>
   </ul>
 
   <h2>Author</h2>
