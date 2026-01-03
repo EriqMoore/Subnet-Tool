@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
 </head>
 <body>
-  <h1>Subnetting Analysis Tool</h1>
+  <h1>Subnet Analysis Tool</h1>
+   <img src="./img/project.png" alt="network illustration" width="90">
 
   <h2>Overview</h2>
   <p>
